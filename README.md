@@ -9,6 +9,15 @@
 
 <br>
 
+## Project Requirements
+| Part | Description |
+| --- | --- |
+| Features | • Create<br>• Read<br>• Update<br>• Delete |
+| Framework | • Bootstrap 5<br>• Vue.js |
+| Tools | • Visual Studio Code<br>• Node.js |
+
+<br>
+
 ## Download & Install
 1. Visual Studio Code
 

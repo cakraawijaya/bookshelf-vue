@@ -9,6 +9,15 @@
 
 <br>
 
+## Kebutuhan Proyek
+| Bagian | Deskripsi |
+| --- | --- |
+| Fitur | • Buat<br>• Baca<br>• Ubah<br>• Hapus |
+| Kerangka kerja | • Bootstrap 5<br>• Vue.js |
+| Peralatan | • Visual Studio Code<br>• Node.js |
+
+<br>
+
 ## Unduh & Instal
 1. Visual Studio Code
 
