@@ -5,7 +5,7 @@
 ![Type](https://img.shields.io/badge/Type-Course-light.svg?style=flat&logo=gitbook&logoColor=white&color=%23F7DF1E)
 
 # Bookshelf-Vue
-<p>PerpusVue404 adalah hasil dari pelatihan reguler CAMP404 Batch 16 yang telah saya sesuaikan.</p>
+<p>Bookshelf-Vue adalah hasil dari pelatihan reguler CAMP404 Batch 16.</p>
 
 <br>
 
