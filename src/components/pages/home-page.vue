@@ -8,7 +8,7 @@
 
 <script>
     export default {
-      name: "HomePage"
+      name: "home-page"
     }
 </script>
 

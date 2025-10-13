@@ -1,14 +1,14 @@
 <template>
   <footer class="footer d-flex flex-column-reverse flex-md-row justify-content-between align-items-center p-3">
     <!-- Kolom Kiri (copyright) -->
-    <div class="d-flex justify-content-center justify-content-md-start w-100 w-md-auto mb-2 mb-md-0">
+    <div class="d-flex justify-content-center justify-content-md-start w-100 w-md-auto mb-2 mb-md-0 copyright">
       <span class="text-muted monospace">
         © 2022-{{ currentYear }} <strong>perpusvue404</strong>. All Rights Reserved
       </span>
     </div>
 
     <!-- Kolom Kanan (ikon sosial) -->
-    <ul class="nav justify-content-center justify-content-md-end list-unstyled d-flex w-100 w-md-auto">
+    <ul class="nav justify-content-center justify-content-md-end list-unstyled d-flex w-100 w-md-auto sosmed">
       <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-twitter"></i></a></li>
       <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram"></i></a></li>
       <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook"></i></a></li>
@@ -35,5 +35,27 @@ export default {
 .footer .nav a:hover {
   color: #000;
   transition: color 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sosmed {
+    margin: 8px 0 10px 0;
+  }
+
+  .copyright > span {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sosmed {
+    margin: 8px 0 10px 0;
+  }
+
+  .copyright > span {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 </style>
