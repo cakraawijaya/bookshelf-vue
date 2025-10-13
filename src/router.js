@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from './components/pages/Home.vue';
-import Katalog from './components/pages/Katalog.vue';
-import ManajemenBuku from './components/pages/ManajemenBuku.vue';
+import Home from './components/pages/home-page.vue';
+import Katalog from './components/pages/catalog-page.vue';
+import ManajemenBuku from './components/pages/management-page.vue';
 
 const routes = [
     {
@@ -13,7 +13,7 @@ const routes = [
         component: Katalog,
     },
     {
-        path: "/ManajemenBuku",
+        path: "/Manajemen-Buku",
         component: ManajemenBuku,
     }
 ];
