@@ -5,7 +5,7 @@
 ![Type](https://img.shields.io/badge/Type-Course-light.svg?style=flat&logo=gitbook&logoColor=white&color=%23F7DF1E)
 
 # Bookshelf-Vue
-<p>Bookshelf-Vue adalah hasil dari pelatihan reguler CAMP404 Batch 16.</p>
+<p>Bookshelf-Vue adalah aplikasi perpustakaan digital berbasis Vue.js yang memiliki fitur manajemen buku dan tampilan katalog.</p>
 
 <br>
 
@@ -52,7 +52,7 @@
 ## Memulai
 1. Unduh dan ekstrak repositori ini.<br><br>
 
-2. Buka direktori ``` perpusvue404 ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br><br>
+2. Buka direktori ``` bookshelf-vue ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br><br>
 
    • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:
 
