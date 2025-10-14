@@ -1,5 +1,4 @@
 <template>
-  <div id="app" class="app-container">
     <Navbar />
     <main class="flex-grow-1">
       <router-view 
@@ -10,7 +9,6 @@
       />
     </main>
     <Footer />
-  </div>
 </template>
 
 <script>
