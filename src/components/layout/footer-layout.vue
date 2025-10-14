@@ -3,7 +3,7 @@
     <!-- Kolom Kiri (copyright) -->
     <div class="d-flex justify-content-center justify-content-md-start w-100 w-md-auto mb-2 mb-md-0 copyright">
       <span class="text-muted monospace">
-        © 2022-{{ currentYear }} <strong>perpusvue404</strong>. All Rights Reserved
+        © 2022-{{ currentYear }} <strong>Bookshelf-Vue</strong>. All Rights Reserved
       </span>
     </div>
 
