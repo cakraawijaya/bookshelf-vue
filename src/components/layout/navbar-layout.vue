@@ -10,7 +10,7 @@
           height="24"
           class="d-inline-block align-text-top me-2"
         />
-        perpusvue404
+        Bookshelf-Vue
       </a>
 
       <!-- Toggle button untuk versi mobile -->
