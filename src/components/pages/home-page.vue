@@ -1,17 +1,13 @@
 <template>
   <section class="home-container">
-    <!-- Home Section -->
-    <div class="home">
-      <div class="home-text">
-        <h1>Selamat Datang di <span>Bookshelf-Vue</span></h1>
-        <p>
-          Bookshelf-Vue adalah media pustaka digital modern berbasis 
-          <strong>Vue.js</strong>, tempat untuk mengelola dan menjelajahi koleksi buku favoritmu.
-        </p>
-      </div>
+    <div class="home-text">
+      <h1>Selamat Datang di <span>Bookshelf-Vue</span></h1>
+      <p>
+        Bookshelf-Vue adalah media pustaka digital modern berbasis 
+        <strong>Vue.js</strong>, tempat untuk mengelola dan menjelajahi koleksi buku favoritmu.
+      </p>
     </div>
 
-    <!-- Features Section -->
     <div class="features">
       <router-link to="/katalog" class="feature-card">
         <i class="bi bi-journal-bookmark"></i>
@@ -45,24 +41,14 @@ export default {
   justify-content: center;
   border-radius: 40px;
   max-width: 1200px;
+  margin: 0 auto;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* ===============================
-   Home Section
-================================= */
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 900px;
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .home-text {
-  flex: 1 1 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
 }
 
 .home-text h1 {
@@ -72,7 +58,7 @@ export default {
 }
 
 .home-text h1 span {
-  color: #6f42c1;
+  color: rgba(240, 184, 0, 1);
 }
 
 .home-text p {
@@ -85,14 +71,11 @@ export default {
   margin-right: auto;
 }
 
-/* ===============================
-   Features Section
-================================= */
 .features {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .feature-card {
@@ -110,14 +93,12 @@ export default {
   transition: all 0.35s ease;
 }
 
-/* Efek hover modern & elegan */
 .feature-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+  box-shadow: 0 5px 15px rgba(184, 179, 194, 0.25);
   background: linear-gradient(145deg, #ffffff 0%, #f4ecff 100%);
 }
 
-/* Garis cahaya lembut di bawah kartu */
 .feature-card::after {
   content: "";
   position: absolute;
@@ -126,7 +107,7 @@ export default {
   transform: translateX(-50%) scaleX(0);
   width: 80%;
   height: 3px;
-  background: linear-gradient(90deg, #6f42c1, #b07cff);
+  background: linear-gradient(90deg, rgba(240, 184, 0, 1), #b07cff);
   border-radius: 3px;
   transition: all 0.4s ease;
 }
@@ -135,10 +116,9 @@ export default {
   transform: translateX(-50%) scaleX(1);
 }
 
-/* Animasi ikon saat hover */
 .feature-card i {
   font-size: 2.5rem;
-  color: #6f42c1;
+  color: rgba(240, 184, 0, 1);
   margin-bottom: 15px;
   transition: transform 0.3s ease;
 }
@@ -149,6 +129,7 @@ export default {
 
 .feature-card h3 {
   font-size: 1.25rem;
+  font-weight: bold;
   margin-bottom: 10px;
   color: #2f2b3a;
 }
@@ -158,26 +139,67 @@ export default {
   font-size: 1rem;
 }
 
-/* ===============================
-   Responsive
-================================= */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .home-container {
-    padding: 60px 20px;
+    padding: 40px 20px;
     border-radius: 20px;
   }
 
   .home-text h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .home-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .feature-card {
     width: 100%;
     max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 40px 20px;
+    min-height: auto;
+    box-shadow: none;
+  }
+
+  .home-text h1 {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+
+  .home-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 25px 15px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+
+  .feature-card i {
+    font-size: 2rem;
   }
 }
 </style>

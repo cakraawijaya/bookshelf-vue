@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Navbar from './components/layout/navbar-layout.vue';
-import Footer from './components/layout/footer-layout.vue';
+import Navbar from "./components/layout/navbar-layout.vue";
+import Footer from "./components/layout/footer-layout.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: { Navbar, Footer },
   data() {
     return {
@@ -34,13 +34,11 @@ export default {
     this.filteredBooks = this.booksData;
   },
   methods: {
-    // Tambah Buku
     storeData(bookCreated) {
       if (!bookCreated.judul || !bookCreated.pengarang || !bookCreated.tahun) {
         alert("Semua field wajib diisi!");
         return;
       }
-      // buat id unik baru
       const newId = this.booksData.length > 0 ? Math.max(...this.booksData.map(b => b._id)) + 1 : 1;
       const newBook = { _id: newId, ...bookCreated };
       this.booksData.push(newBook);
@@ -48,7 +46,6 @@ export default {
       alert("Data berhasil ditambahkan!");
     },
 
-    // Update Buku
     updateData(bookChanged) {
       const index = this.booksData.findIndex(b => b._id === bookChanged._id);
       if (index !== -1) {
@@ -60,7 +57,6 @@ export default {
       }
     },
 
-    // Hapus Buku
     deleteData(book) {
       const confirmDelete = confirm(`Apakah Anda yakin ingin menghapus buku "${book.judul}"?`);
       if (confirmDelete) {
@@ -76,6 +72,18 @@ export default {
 <style scoped>
 main {
   padding: 60px;
-  flex: 1; /* mengambil sisa ruang sehingga footer terdorong ke bawah */
+  flex: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 35px;
+  }
 }
 </style>

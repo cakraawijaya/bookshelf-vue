@@ -79,14 +79,12 @@ export default {
 </script>
 
 <style scoped>
-/* ====== Tata Letak Utama ====== */
 .katalog-container {
   margin: 0 auto;
   text-align: center;
   max-width: 100%;
 }
 
-/* ====== Judul & Deskripsi ====== */
 .katalog-title {
   font-weight: 700;
   color: #212529;
@@ -99,13 +97,11 @@ export default {
   color: #495057;
 }
 
-/* ====== Garis Pembatas ====== */
 .katalog-divider {
   border-top: 2px solid #5c5c5c;
   margin-bottom: 3rem;
 }
 
-/* ====== Pencarian ====== */
 .katalog-search-group {
   max-width: 500px;
   margin: 2.5rem auto;
@@ -142,7 +138,6 @@ export default {
   transition: all 0.3s ease;
 }
 
-/* ====== Tabel Buku ====== */
 .table {
   border-radius: 0.5rem;
   font-size: 0.95rem;
@@ -168,10 +163,7 @@ export default {
   transition: background-color 0.3s ease;
 }
 
-/* ====== Responsif ====== */
-
-/* Medium devices (tablet) */
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .katalog-title {
     font-size: 1.5rem;
   }
@@ -189,40 +181,7 @@ export default {
   }
 }
 
-/* Small devices (mobile) */
 @media (max-width: 480px) {
-  .katalog-title {
-    font-size: 1.25rem;
-  }
-
-  .katalog-desc {
-    font-size: 0.9rem;
-  }
-
-  .katalog-search-group {
-    width: 100%;
-    margin: 1rem auto;
-  }
-
-  .search-box {
-    border-radius: 0.5rem 0 0 0.5rem;
-  }
-
-  .search-label {
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
-
-  .table {
-    font-size: 0.8rem;
-  }
-
-  .table thead th i {
-    display: none;
-  }
-}
-
-/* Extra small devices (≤400px) */
-@media (max-width: 400px) {
   .katalog-title {
     font-size: 1.1rem;
   }
@@ -244,7 +203,6 @@ export default {
     padding: 0.5rem;
   }
 
-  /* Tabel scroll horizontal */
   .table-responsive {
     overflow-x: auto;
   }

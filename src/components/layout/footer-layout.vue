@@ -1,18 +1,20 @@
 <template>
-  <footer class="footer d-flex flex-column-reverse flex-md-row justify-content-between align-items-center p-4">
-    <!-- Kolom Kiri (copyright) -->
-    <div class="d-flex justify-content-center justify-content-md-start w-100 w-md-auto mb-2 mb-md-0 copyright">
-      <span class="text-muted monospace">
-        © 2022-{{ currentYear }} <strong>Bookshelf-Vue</strong>. All Rights Reserved
-      </span>
-    </div>
+  <footer class="footer">
+    <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center">
+      
+      <ul class="nav sosmed justify-content-center justify-content-md-end list-unstyled d-flex gap-3 order-1 order-md-2">
+        <li><a href="#" class="sosmed-link"><i class="bi bi-twitter"></i></a></li>
+        <li><a href="#" class="sosmed-link"><i class="bi bi-instagram"></i></a></li>
+        <li><a href="#" class="sosmed-link"><i class="bi bi-facebook"></i></a></li>
+      </ul>
 
-    <!-- Kolom Kanan (ikon sosial) -->
-    <ul class="nav justify-content-center justify-content-md-end list-unstyled d-flex w-100 w-md-auto sosmed">
-      <li class="ms-3"><a href="#" class="sosmed-link"><i class="bi bi-twitter"></i></a></li>
-      <li class="ms-3"><a href="#" class="sosmed-link"><i class="bi bi-instagram"></i></a></li>
-      <li class="ms-3"><a href="#" class="sosmed-link"><i class="bi bi-facebook"></i></a></li>
-    </ul>
+      <div class="copyright text-center text-md-start mb-md-0 order-2 order-md-1">
+        <span class="text-muted monospace">
+          © 2022-{{ currentYear }} <strong>Bookshelf-Vue</strong>. All Rights Reserved
+        </span>
+      </div>
+
+    </div>
   </footer>
 </template>
 
@@ -32,10 +34,13 @@ export default {
   background: linear-gradient(-180deg, rgb(206, 187, 244), rgb(246, 231, 181));
 }
 
-/* Efek hover ikon sosmed */
+.footer .container-fluid {
+  padding: 1.2rem 3rem;
+}
+
 .sosmed-link {
   color: #6c757d;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -45,26 +50,49 @@ export default {
   text-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .sosmed {
-    margin: 8px 0 10px 0;
+.copyright span {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .container-fluid {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 2.2rem;
   }
 
-  .copyright > span {
-    text-align: center;
-    margin: 0 auto;
+  .sosmed-link {
+    font-size: 1.5rem;
+  }
+
+  .copyright span {
+    font-size: 0.95rem;
   }
 }
 
-@media (max-width: 480px) {
-  .sosmed {
-    margin: 8px 0 10px 0;
+@media (max-width: 767px) {
+  .footer .container-fluid {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.8rem 1.2rem;
   }
 
-  .copyright > span {
-    text-align: center;
-    margin: 0 auto;
+  .sosmed {
+    order: 1;
+    margin-bottom: 8px;
+    gap: 1rem;
+  }
+
+  .sosmed-link {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    order: 2;
+  }
+
+  .copyright span {
+    font-size: 0.85rem;
   }
 }
 </style>

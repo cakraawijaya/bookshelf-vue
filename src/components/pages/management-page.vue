@@ -8,7 +8,6 @@
 
     <hr class="manajemen-divider mb-5" />
 
-    <!-- Baris atas: Tambah Buku & Search -->
     <div class="row align-items-stretch justify-content-between mb-3 flex-column flex-md-row">
       <div class="col-md-4 text-start mb-2 mb-md-0 d-flex">
         <button class="btn btn-warning w-70 w-md-auto flex-fill-md" @click="formMode = 'create'">
@@ -31,7 +30,6 @@
       </div>
     </div>
 
-    <!-- Form Tambah Buku -->
     <div id="formTambah" v-if="formMode == 'create'" class="mt-5 mb-4">
       <form class="form-row" @submit.prevent="submitAdd">
         <div class="row">
@@ -83,7 +81,6 @@
       </form>
     </div>
 
-    <!-- Form Edit Buku -->
     <div id="formEdit" v-if="formMode == 'edit'" class="mt-5 mb-4">
       <form class="form-row" @submit.prevent="submitChange">
         <div class="row">
@@ -135,7 +132,6 @@
       </form>
     </div>
 
-    <!-- Tabel Data Buku -->
     <div class="table-responsive mt-4">
       <table class="table table-bordered table-striped table-hover shadow-sm">
         <thead class="table-dark">
@@ -238,24 +234,25 @@ export default {
   max-width: 100%;
 }
 
-/* Heading */
 .manajemen-title {
   font-weight: 700;
   font-size: 2rem;
   color: #212529;
 }
+
 .manajemen-desc {
   font-size: 1.05rem;
   color: #495057;
 }
+
 .manajemen-divider {
   border-top: 2px solid #5c5c5c;
 }
 
-/* Search */
 .manajemen-search-group {
   max-width: 350px;
 }
+
 .search-box {
   border: 2px solid #212529;
   background-color: #ffffff;
@@ -265,15 +262,18 @@ export default {
   transition: all 0.25s ease;
   border-radius: 8px 0 0 8px;
 }
+
 .search-box::placeholder {
   color: #6c757d;
   opacity: 0.8;
 }
+
 .search-box:focus {
   outline: none;
   border-color: #6c757d;
   box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.25);
 }
+
 .search-label {
   background-color: #212529;
   color: #ffffff;
@@ -284,17 +284,18 @@ export default {
   transition: all 0.3s ease;
 }
 
-/* Form Input */
 .form-control.form-control-sm {
   background-color: #ffffff;
   color: #212529;
   font-weight: 500;
   transition: all 0.25s ease;
 }
+
 .form-control.form-control-sm::placeholder {
   color: #6c757d;
   opacity: 0.8;
 }
+
 .form-control.form-control-sm:focus,
 .form-control.form-control-sm:hover {
   outline: none;
@@ -302,36 +303,38 @@ export default {
   box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.25);
 }
 
-/* Table */
 .table {
   font-size: 0.95rem;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .table thead {
   background-color: #212529;
   color: #fff;
   font-weight: bold;
 }
+
 .table tbody tr:nth-child(even) {
   background-color: #fff8e1;
 }
+
 .table tbody tr:nth-child(odd) {
   background-color: #fdf6da;
 }
+
 .table tbody tr:hover {
   background-color: #fff3cd;
   transition: background-color 0.3s ease;
 }
 
-/* Responsive */
 @media (min-width: 768px) and (max-width: 1024px) {
   .manajemen-title {
     font-size: 1.25rem;
   }
 
   .manajemen-desc {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .manajemen-search-group {
@@ -356,8 +359,7 @@ export default {
   }
 }
 
-/* ===== Layar super kecil <= 400px ===== */
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .manajemen-title {
     font-size: 1.1rem;
   }
@@ -366,26 +368,22 @@ export default {
     font-size: 0.85rem;
   }
 
-  /* Search bar full width */
   .manajemen-search-group {
     width: 100% !important;
     margin-top: 0.5rem;
   }
 
-  /* Form tambah/edit: semua kolom full width */
   #formTambah .row > div,
   #formEdit .row > div {
     width: 100% !important;
     margin-bottom: 0.5rem;
   }
 
-  /* Tombol tambah/edit full width */
   #formTambah button,
   #formEdit button {
     width: 100% !important;
   }
 
-  /* Tombol aksi tabel: stack vertikal */
   .table td.d-flex {
     flex-direction: column !important;
     gap: 0.25rem !important;
@@ -396,7 +394,6 @@ export default {
     width: 100% !important;
   }
 
-  /* Table scroll horizontal */
   .table-responsive {
     overflow-x: auto;
   }
@@ -405,7 +402,6 @@ export default {
     display: none;
   }
 
-  /* Padding input lebih nyaman di layar kecil */
   .form-control.form-control-sm,
   .search-box {
     padding: 0.5rem !important;
