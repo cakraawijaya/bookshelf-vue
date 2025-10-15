@@ -80,6 +80,17 @@
 
 <br><br>
 
+## Deploy di Vercel
+1. Buka platform Vercel:&nbsp;&nbsp;<strong><a href="https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme">Klik Disini</a></strong> &nbsp;, lalu Daftar dan Login terlebih dahulu.<br><br>
+2. Izinkan Vercel untuk mengakses repositori.<br><br>
+3. Upload proyek ke GitHub.<br><br>
+4. Masuk ke dashboard Vercel:&nbsp;&nbsp;<strong><a href="https://vercel.com/dashboard">Klik Disini</a></strong><br><br>
+5. Klik ``` Add New Project ```.<br><br>
+6. Pilih repositori GitHub mana yang diinginkan.<br><br>
+7. Klik ``` Deploy ```.
+
+<br><br>
+
 ## Sorotan
 <table>
 <tr>
