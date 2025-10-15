@@ -1,8 +1,8 @@
 <template>
   <div class="container manajemen-container">
-    <h1 class="manajemen-title mb-3">Menu Manajemen Buku</h1>
+    <h1 class="manajemen-title mb-3">Manajemen Buku</h1>
     <p class="manajemen-desc text-muted mb-2">
-      Menu ini menampilkan daftar koleksi buku perpustakaan secara interaktif, serta memungkinkan 
+      Menu ini menampilkan daftar koleksi buku perpustakaan yang ada saat ini, serta memungkinkan 
       Anda menambah, mengubah, atau menghapus data buku secara mudah dan cepat.
     </p>
 
