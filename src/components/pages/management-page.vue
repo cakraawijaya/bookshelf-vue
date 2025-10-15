@@ -241,7 +241,8 @@ export default {
 }
 
 .manajemen-desc {
-  font-size: 1.05rem;
+  font-size: 1rem;
+  line-height: 1.7;
   color: #495057;
 }
 
@@ -250,22 +251,24 @@ export default {
 }
 
 .manajemen-search-group {
-  max-width: 350px;
+  max-width: 500px;
 }
 
 .search-box {
   border: 2px solid #212529;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #212529;
   font-weight: 500;
   padding: 0.6rem 1rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  font-size: 0.95rem;
   transition: all 0.25s ease;
-  border-radius: 8px 0 0 8px;
 }
 
 .search-box::placeholder {
   color: #6c757d;
   opacity: 0.8;
+  font-size: 0.9rem;
 }
 
 .search-box:focus {
@@ -276,24 +279,33 @@ export default {
 
 .search-label {
   background-color: #212529;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   border: 2px solid #212529;
   padding: 0.6rem 1.2rem;
-  border-radius: 0 8px 8px 0;
-  transition: all 0.3s ease;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-label i {
+  font-size: 1rem;
 }
 
 .form-control.form-control-sm {
-  background-color: #ffffff;
+  background-color: #fff;
   color: #212529;
   font-weight: 500;
   transition: all 0.25s ease;
+  font-size: 0.9rem;
 }
 
 .form-control.form-control-sm::placeholder {
   color: #6c757d;
   opacity: 0.8;
+  font-size: 0.9rem;
 }
 
 .form-control.form-control-sm:focus,
@@ -303,16 +315,36 @@ export default {
   box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.25);
 }
 
+.input-group-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.input-group-text i {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
+}
+
 .table {
-  font-size: 0.95rem;
-  border-radius: 10px;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
   overflow: hidden;
 }
 
 .table thead {
-  background-color: #212529;
-  color: #fff;
-  font-weight: bold;
+  background-color: #212529 !important;
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.table thead th {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.table thead th i {
+  font-size: 0.9rem;
+  margin-right: 0.3rem;
 }
 
 .table tbody tr:nth-child(even) {
@@ -328,49 +360,102 @@ export default {
   transition: background-color 0.3s ease;
 }
 
+.table tbody td {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+.btn {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .manajemen-title {
-    font-size: 1.25rem;
+    font-size: 1.6rem;
   }
 
   .manajemen-desc {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .manajemen-search-group {
-    max-width: 100% !important;
-    margin-top: 0.5rem;
+    max-width: 100%;
+  }
+
+  .search-box {
+    font-size: 0.85rem;
   }
 
   .search-box::placeholder {
-    font-size: 1.5vw;
-    color: #6c757d;
-    opacity: 0.8;
+    font-size: 0.8rem;
   }
 
-  .table-responsive {
-    overflow-x: auto;
+  .search-label {
+    font-size: 0.9rem;
   }
+
+  .search-label i,
+  .input-group-text,
+  .input-group-text i,
+  .table thead th i {
+    font-size: 0.85rem;
+  }
+
+  .table {
+    font-size: 0.8rem;
+  }
+
+  .table tbody td,
+  .btn,
+  .form-control.form-control-sm {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .manajemen-desc {
+    margin-top: 35px;
+  }
+
+  .manajemen-container > .row .btn.btn-warning {
+    width: 100% !important;
+    text-align: left;
+    line-height: 2.5;
+    margin-bottom: 10px;
+  }
+
+  .manajemen-search-group {
+    margin-bottom: 20px;
+  }
+
   .table thead th i {
     display: none;
-  }
-  .table td .btn {
-    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .manajemen-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .manajemen-desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-top: 30px;
+  }
+
+  .manajemen-container > .row .btn.btn-warning {
+    width: 100% !important;
+    text-align: left;
+    line-height: 2.4;
+    margin-bottom: -5px;
   }
 
   .manajemen-search-group {
-    width: 100% !important;
-    margin-top: 0.5rem;
+    width: 100%;
+    margin: 0.8rem auto;
   }
 
   #formTambah .row > div,
@@ -398,13 +483,38 @@ export default {
     overflow-x: auto;
   }
 
+  .table thead th {
+    font-size: 0.7rem;
+  }
+
   .table thead th i {
     display: none;
   }
 
   .form-control.form-control-sm,
-  .search-box {
+  .search-box,
+  .input-group-text,
+  .btn {
+    font-size: 0.75rem;
     padding: 0.5rem !important;
+  }
+
+  .input-group-text i {
+    font-size: 0.75rem;
+  }
+
+  .input-group-text.bginput-create,
+  .input-group-text.bginput-update {
+    font-size: 0.75rem;
+  }
+
+  .search-box::placeholder,
+  .form-control.form-control-sm::placeholder {
+    font-size: 0.75rem;
+  }
+
+  .table tbody td {
+    font-size: 0.75rem;
   }
 }
 </style>
