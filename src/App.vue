@@ -1,6 +1,6 @@
 <template>
     <Navbar />
-    <main class="flex-grow-1">
+    <main>
       <router-view 
         :bookList="filteredBooks"
         @store="storeData" 
@@ -74,30 +74,8 @@ export default {
 </script>
 
 <style scoped>
-/* Membuat seluruh page full height dan footer selalu di bawah */
-html, body, #app {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* memastikan container setinggi layar */
-}
-
-.flex-grow-1 {
-  flex: 1; /* mengambil sisa ruang sehingga footer terdorong ke bawah */
-}
-
 main {
   padding: 60px;
+  flex: 1; /* mengambil sisa ruang sehingga footer terdorong ke bawah */
 }
 </style>

@@ -65,6 +65,7 @@ export default {
   z-index: 999;
   font-weight: bold;
   height: 70px;
+  transition: background 0.3s ease;
 }
 
 /* Navbar Links */
@@ -72,11 +73,16 @@ export default {
   position: relative;
   font-size: 1rem;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 8px 15px;
 }
 
+/* Hover */
 .navbar-link:hover {
-  border: 2px double rgb(132, 72, 0);
-  border-radius: 12px;
+  border-color: rgba(255, 231, 154, 1);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Logo */
@@ -91,13 +97,33 @@ export default {
 @media (min-width: 933px) {
   .navbar-nav {
     display: flex;
-    margin-left: auto; /* menu ke kanan */
+    margin-left: auto;
     gap: 15px;
     align-items: center;
   }
 
-  .nav-item .nav-link {
-    padding: 8px 15px;
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-1px);
+  }
+
+  .navbar-link i {
+    margin-right: 0.5rem;
   }
 }
 
@@ -107,48 +133,64 @@ export default {
 @media (max-width: 932px) {
   .navbar {
     height: auto;
+    padding: 10px 15px;
+  }
+
+  .container-fluid {
+    flex-wrap: wrap;
+  }
+
+  .navbar-collapse {
+    margin-top: 8px;
+    text-align: center;
   }
 
   .navbar-nav {
     width: 100%;
     flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    width: 90%;
   }
 
   .nav-link {
-    width: 100%;
-    font-size: 0.95rem;
-    padding: 12px 20px;
-    margin: 5px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease;
   }
 
-  /* Underline tipis tepat di bawah icon + teks */
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(-1px);
+  }
+
   .navbar-link::after {
-    content: "";
-    position: absolute;
-    bottom: 5px;
-    left: 20%;
-    right: 20%;
-    height: 2px;
-    background-color: #000;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
+    display: none;
   }
 
-  /* Munculkan underline saat hover / active */
-  .navbar-link:hover::after,
-  .navbar-link.active::after {
-    transform: scaleX(1);
+  .navbar-toggler {
+    border: none;
   }
 
-  /* Jarak icon & teks */
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-brand {
+    flex: 1;
+  }
+
   .navbar-link i {
     margin-right: 0.5rem;
   }
