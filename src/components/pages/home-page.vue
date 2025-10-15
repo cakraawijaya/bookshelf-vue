@@ -1,69 +1,183 @@
 <template>
-    <div class="beranda" style="text-align: center">
-        <img src="favicon/logo.png" class="Logo" alt="Logo"/>
-        <h1>Selamat datang di website Bookshelf-Vue</h1>
-        <p>- Website Bookshelf-Vue ini merupakan media pustaka digital yang dibuat dengan bantuan framework Vue JS -</p>
+  <section class="home-container">
+    <!-- Home Section -->
+    <div class="home">
+      <div class="home-text">
+        <h1>Selamat Datang di <span>Bookshelf-Vue</span></h1>
+        <p>
+          Bookshelf-Vue adalah media pustaka digital modern berbasis 
+          <strong>Vue.js</strong>, tempat untuk mengelola dan menjelajahi koleksi buku favoritmu.
+        </p>
+      </div>
     </div>
+
+    <!-- Features Section -->
+    <div class="features">
+      <router-link to="/katalog" class="feature-card">
+        <i class="bi bi-journal-bookmark"></i>
+        <h3>Katalog Buku</h3>
+        <p>Telusuri berbagai koleksi buku menarik dalam satu tempat.</p>
+      </router-link>
+
+      <router-link to="/manajemen-buku" class="feature-card">
+        <i class="bi bi-book-half"></i>
+        <h3>Manajemen Buku</h3>
+        <p>Tambah, ubah, atau hapus data buku dengan mudah dan cepat.</p>
+      </router-link>
+    </div>
+  </section>
 </template>
 
 <script>
-    export default {
-      name: "home-page"
-    }
+export default {
+  name: "home-page",
+};
 </script>
 
 <style scoped>
-.beranda {
+.home-container {
+  background: linear-gradient(180deg, #f6f0ff 0%, #fff9e6 100%);
+  min-height: 100vh;
+  padding: 80px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 40px;
+  max-width: 1200px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* ===============================
+   Home Section
+================================= */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
   text-align: center;
-  padding: 20px;
-  min-height: 80vh;
-  box-sizing: border-box;
+  margin-bottom: 60px;
 }
 
-.logo {
-  width: 200px;      /* ukuran default logo */
-  max-width: 50%;    /* agar logo mengecil di layar kecil */
-  height: auto;
-  margin-bottom: 20px;
-  transition: all 0.3s ease;
+.home-text {
+  flex: 1 1 100%;
 }
 
-h1 {
-  font-size: 2rem;
+.home-text h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2f2b3a;
+}
+
+.home-text h1 span {
+  color: #6f42c1;
+}
+
+.home-text p {
+  margin-top: 20px;
+  color: #4d4d4d;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============================
+   Features Section
+================================= */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 30px 25px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+/* Efek hover modern & elegan */
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+  background: linear-gradient(145deg, #ffffff 0%, #f4ecff 100%);
+}
+
+/* Garis cahaya lembut di bawah kartu */
+.feature-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, #6f42c1, #b07cff);
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+.feature-card:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+/* Animasi ikon saat hover */
+.feature-card i {
+  font-size: 2.5rem;
+  color: #6f42c1;
   margin-bottom: 15px;
+  transition: transform 0.3s ease;
 }
 
-p {
+.feature-card:hover i {
+  transform: scale(1.15) rotate(3deg);
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #2f2b3a;
+}
+
+.feature-card p {
+  color: #555;
   font-size: 1rem;
-  max-width: 600px;   /* agar teks tidak terlalu panjang di layar besar */
 }
 
-/* Media Queries untuk layar lebih kecil */
+/* ===============================
+   Responsive
+================================= */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 1.5rem;
+  .home-container {
+    padding: 60px 20px;
+    border-radius: 20px;
   }
-  p {
-    font-size: 0.9rem;
-  }
-  .logo {
-    width: 150px;
-  }
-}
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.2rem;
+  .home-text h1 {
+    font-size: 2rem;
   }
-  p {
-    font-size: 0.8rem;
+
+  .home-text p {
+    font-size: 1rem;
   }
-  .logo {
-    width: 120px;
+
+  .feature-card {
+    width: 100%;
+    max-width: 320px;
   }
 }
 </style>
