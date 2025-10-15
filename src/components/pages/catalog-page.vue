@@ -92,7 +92,7 @@ export default {
 }
 
 .katalog-desc {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.7;
   color: #495057;
 }
@@ -115,11 +115,13 @@ export default {
   padding: 0.6rem 1rem;
   border-radius: 0.5rem 0 0 0.5rem;
   transition: all 0.25s ease;
+  font-size: 0.95rem;
 }
 
 .search-box::placeholder {
   color: #6c757d;
   opacity: 0.8;
+  font-size: 0.9rem;
 }
 
 .search-box:focus {
@@ -136,11 +138,16 @@ export default {
   padding: 0.6rem 1.2rem;
   border-radius: 0 0.5rem 0.5rem 0;
   transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.search-label i {
+  font-size: 1rem;
 }
 
 .table {
   border-radius: 0.5rem;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   overflow: hidden;
 }
 
@@ -148,6 +155,10 @@ export default {
   background-color: #212529 !important;
   color: #fff !important;
   font-weight: 700;
+}
+
+.table thead th i {
+  font-size: 0.9rem;
 }
 
 .table tbody tr:nth-child(even) {
@@ -165,29 +176,49 @@ export default {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .katalog-title {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .katalog-desc {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 
   .katalog-search-group {
     max-width: 100%;
   }
 
+  .search-box {
+    font-size: 0.85rem;
+  }
+
+  .search-box::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .search-label {
+    font-size: 0.9rem;
+  }
+
+  .search-label i {
+    font-size: 0.9rem;
+  }
+
   .table {
+    font-size: 0.8rem;
+  }
+
+  .table thead th i {
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 480px) {
   .katalog-title {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .katalog-desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .katalog-search-group {
@@ -197,10 +228,20 @@ export default {
 
   .search-box {
     padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .search-box::placeholder {
+    font-size: 0.75rem;
   }
 
   .search-label {
     padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .search-label i {
+    font-size: 0.8rem;
   }
 
   .table-responsive {
@@ -208,7 +249,7 @@ export default {
   }
 
   .table {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 
   .table thead th i {
