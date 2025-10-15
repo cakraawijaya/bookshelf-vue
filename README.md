@@ -80,6 +80,17 @@
 
 <br><br>
 
+## Deploy on Vercel
+1. Open the Vercel platform:&nbsp;&nbsp;<strong><a href="https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme">Click Here</a></strong> &nbsp;, then register and log in first.<br><br>
+2. Allow Vercel to access the repository.<br><br>
+3. Upload the project to GitHub.<br><br>
+4. Log in to the Vercel dashboard:&nbsp;&nbsp;<strong><a href="https://vercel.com/dashboard">Click Here</a></strong><br><br>
+5. Click ``` Add New Project ```.<br><br>
+6. Select the desired GitHub repository.<br><br>
+7. Click ``` Deploy ```.
+
+<br><br>
+
 ## Highlights
 <table>
 <tr>
