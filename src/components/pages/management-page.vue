@@ -381,12 +381,22 @@ export default {
     font-size: 0.9rem;
   }
 
+  .col-md-4.text-end {
+    flex: 1 1 50%;
+    max-width: 100%;
+  }
+
   .manajemen-search-group {
+    display: flex;
+    width: 100%;
     max-width: 100%;
   }
 
   .search-box {
     font-size: 0.85rem;
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
   }
 
   .search-box::placeholder {
@@ -395,6 +405,7 @@ export default {
 
   .search-label {
     font-size: 0.9rem;
+    flex-shrink: 0;
   }
 
   .search-label i,
@@ -406,12 +417,46 @@ export default {
 
   .table {
     font-size: 0.8rem;
+    margin-top: 20px;
   }
 
   .table tbody td,
   .btn,
   .form-control.form-control-sm {
     font-size: 0.85rem;
+  }
+
+  #formTambah .row,
+  #formEdit .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #formTambah .row > div:nth-child(1),
+  #formEdit .row > div:nth-child(1),
+  #formTambah .row > div:nth-child(2),
+  #formEdit .row > div:nth-child(2) {
+    flex: 1 1 calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+  }
+
+  #formTambah .row > div:nth-child(3),
+  #formEdit .row > div:nth-child(3) {
+    flex: 0 0 100%;
+    margin-bottom: 1rem;
+  }
+
+  #formTambah .row > div.d-grid,
+  #formEdit .row > div.d-grid {
+    flex: 0 0 100%;
+  }
+
+  #formTambah .row > div.d-grid button,
+  #formEdit .row > div.d-grid button {
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 2;
   }
 }
 
@@ -428,7 +473,11 @@ export default {
   }
 
   .manajemen-search-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .table {
+    margin-top: 20px;
   }
 
   .table thead th i {
