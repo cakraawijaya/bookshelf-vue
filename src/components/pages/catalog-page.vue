@@ -1,8 +1,8 @@
 <template>
   <div class="container katalog-container">
-    <h1 class="katalog-title mb-3">Menu Katalog</h1>
+    <h1 class="katalog-title mb-3">Katalog</h1>
     <p class="katalog-desc text-muted mb-2">
-      Menu ini menampilkan daftar koleksi buku perpustakaan secara interaktif.
+      Menu ini menampilkan daftar koleksi buku perpustakaan yang tersedia saat ini.
     </p>
 
     <hr class="katalog-divider mb-5" />
