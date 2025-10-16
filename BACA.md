@@ -13,8 +13,9 @@
 | Bagian | Deskripsi |
 | --- | --- |
 | Fitur | • Buat<br>• Baca<br>• Ubah<br>• Hapus |
-| Kerangka kerja | • Bootstrap 5<br>• Vue.js |
+| Kerangka kerja | • Bootstrap 5<br>• Vue.js 3 |
 | Peralatan | • Visual Studio Code<br>• Node.js |
+| VS Code Extensions | • Prettier<br>• Vetur |
 
 <br>
 
@@ -37,46 +38,86 @@
    https://bit.ly/NodeJS_Installer
    ```
    
-   </td></tr></table><br>
-   
-3. Visual Studio Code Extensions : 
-
-   <table><tr><td width="810">
-      
-   ``` Prettier & Vetur ```
-   
    </td></tr></table>
    
 <br><br>
 
 ## Memulai
-1. Unduh dan ekstrak repositori ini.<br><br>
-
-2. Buka direktori ``` bookshelf-vue ```, lalu buka ``` CMD ``` di dalam direktori tersebut.<br><br>
-
-   • Pertama, Jika anda ``` belum menginstal vue/cli ```, jalankan perintah:
-
+1. Buka ``` Terminal ```, lalu Instal Vue CLI secara global :<br>
    <table><tr><td width="810">
       
-   ````bash
+   ```bash
    npm install -g @vue/cli
-   ````
+   ```
    
-   </td></tr></table><br>
-
-   • Kedua, langkah ini wajib dilakukan, jadi silakan salin perintah berikut:
-
+   </td></tr></table>
+   <br>
+2. Buat project baru :<br>
    <table><tr><td width="810">
-
-   ````bash
-   npm run serve
-   ````
+      
+   ```bash
+   vue create bookshelf-vue
+   ```
    
-   </td></tr></table><br>
-
-3. Buka ``` peramban ``` anda (Tab baru), lalu ketik -> ``` http://localhost:8080/ ``` atau sesuaikan yang ada di ``` CMD ``` anda.<br><br>
-
-4. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
+   </td></tr></table>
+   <br>
+3. Selama setup, akan ditanya :<br>
+   <table>
+      <tr>
+         <th width="200">Pertanyaan</th>
+         <th align="center" width="350">Opsi</th>
+         <th align="center" width="260">Yang dipilih</th>
+      </tr>
+      <tr>
+         <td>? Please pick a preset:</td>
+         <td align="center">> Default ([Vue 3] babel, eslint)<br>> Default ([Vue 2] babel, eslint)<br>> Manually select features</td>
+         <td align="center">Default ([Vue 3] babel, eslint)</td>
+      </tr>
+   </table>
+   <br>
+4. Unduh dan ekstrak repositori ini.<br><br>
+5. Salin direktori: ``` public ``` dan ``` src ```.<br><br>
+6. Salin berkas: ``` BACA.md ```, ``` README.md ```, dan ``` License.txt ```.<br><br>
+7. Tempel dan Timpa ke dalam direktori ``` bookshelf-vue ```.<br><br>
+8. Buka ``` Terminal ``` di dalam direktori tersebut.<br><br>
+9. Instal ``` bootstrap ``` untuk mengatur tampilan (layout):<br>
+   <table><tr><td width="810">
+      
+   ```bash
+   npm install bootstrap
+   ```
+   
+   </td></tr></table>
+   <br>
+10. Instal ``` bootstrap-icons ``` untuk ikon:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm install bootstrap-icons
+    ```
+   
+    </td></tr></table>
+    <br>
+11. Instal ``` vue-router ``` untuk mengatur rute halaman:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm install vue-router
+    ```
+   
+    </td></tr></table>
+    <br>
+12. Untuk menjalankan web, ketikan perintah:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm run serve
+    ```
+   
+    </td></tr></table>
+    <br>
+13. Buka peramban anda, lalu ketik -> ``` http://localhost:8080/ ```.<br><br>
+14. Silakan akses fitur-fiturnya dan nikmatilah [Selesai].
 
 <br><br>
 
