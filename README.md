@@ -13,8 +13,9 @@
 | Part | Description |
 | --- | --- |
 | Features | • Create<br>• Read<br>• Update<br>• Delete |
-| Framework | • Bootstrap 5<br>• Vue.js |
+| Framework | • Bootstrap 5<br>• Vue.js 3 |
 | Tools | • Visual Studio Code<br>• Node.js |
+| VS Code Extensions | • Prettier<br>• Vetur |
 
 <br>
 
@@ -37,46 +38,86 @@
    https://bit.ly/NodeJS_Installer
    ```
    
-   </td></tr></table><br>
-   
-3. Visual Studio Code Extensions
-
-   <table><tr><td width="810">
-
-   ``` Prettier & Vetur ```
-   
    </td></tr></table>
 
 <br><br>
 
 ## Get Started
-1. Download and extract this repository.<br><br>
-   
-2. Open the ``` bookshelf-vue ``` directory, then open ``` CMD ``` inside the directory.<br><br>
-
-   • First, If you have ``` not installed vue/cli ```, run the command:
-
+1. Open ``` Terminal ```, then install Vue CLI globally:<br>
    <table><tr><td width="810">
-
-   ````bash
+      
+   ```bash
    npm install -g @vue/cli
-   ````
+   ```
    
-   </td></tr></table><br>
-   
-   • Secondly, this step is mandatory, so please copy the following command:
-
+   </td></tr></table>
+   <br>
+2. Create a new project:<br>
    <table><tr><td width="810">
-
-   ````bash
-   npm run serve
-   ````
+      
+   ```bash
+   vue create bookshelf-vue
+   ```
    
-   </td></tr></table><br>
-
-3. Open your ``` browser ``` (New tab), then type -> ``` http://localhost:8080/ ``` or customize the one on your ``` CMD ```.<br><br>
-
-4. Please access the features and enjoy [Done].
+   </td></tr></table>
+   <br>
+3. During setup, you will be asked:<br>
+   <table>
+      <tr>
+         <th width="200">Question</th>
+         <th align="center" width="350">Option</th>
+         <th align="center" width="260">Selected</th>
+      </tr>
+      <tr>
+         <td>? Please pick a preset:</td>
+         <td align="center">> Default ([Vue 3] babel, eslint)<br>> Default ([Vue 2] babel, eslint)<br>> Manually select features</td>
+         <td align="center">Default ([Vue 3] babel, eslint)</td>
+      </tr>
+   </table>
+   <br>
+4. Download and extract this repository.<br><br>
+5. Copy the directories: ``` public ``` dan ``` src ```.<br><br>
+6. Copy the files: ``` BACA.md ```, ``` README.md ```, dan ``` License.txt ```.<br><br>
+7. Paste and Replace into the ``` bookshelf-vue ``` directory.<br><br>
+8. Open ``` Terminal ``` inside that directory.<br><br>
+9. Install ``` bootstrap ``` to manage the appearance (layout):<br>
+   <table><tr><td width="810">
+      
+   ```bash
+   npm install bootstrap
+   ```
+   
+   </td></tr></table>
+   <br>
+10. Install ``` bootstrap-icons ``` for icons:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm install bootstrap-icons
+    ```
+   
+    </td></tr></table>
+    <br>
+11. Install ``` vue-router ``` to manage page routes:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm install vue-router
+    ```
+   
+    </td></tr></table>
+    <br>
+12. To run the web, type the command:<br>
+    <table><tr><td width="810">
+      
+    ```bash
+    npm run serve
+    ```
+   
+    </td></tr></table>
+    <br>
+13. Open your browser, then type -> ``` http://localhost:8080/ ```.<br><br>
+14. Please access the features and enjoy [Done].
 
 <br><br>
 
