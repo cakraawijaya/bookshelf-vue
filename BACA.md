@@ -43,7 +43,7 @@
 <br><br>
 
 ## Memulai
-1. Buka ``` Terminal ```, lalu Instal Vue CLI secara global :<br>
+1. Buka ``` Terminal ```, lalu Instal Vue CLI secara global:<br>
    <table><tr><td width="810">
       
    ```bash
@@ -52,7 +52,7 @@
    
    </td></tr></table>
    <br>
-2. Buat project baru :<br>
+2. Buat proyek baru:<br>
    <table><tr><td width="810">
       
    ```bash
@@ -61,7 +61,7 @@
    
    </td></tr></table>
    <br>
-3. Selama setup, akan ditanya :<br>
+3. Selama setup, akan ditanya:<br>
    <table>
       <tr>
          <th width="200">Pertanyaan</th>
