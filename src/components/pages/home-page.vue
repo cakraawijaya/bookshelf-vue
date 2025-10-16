@@ -1,6 +1,6 @@
 <template>
   <section class="home-container">
-    <div class="home-text">
+    <div class="home-text user-select-none">
       <h1>Selamat Datang di <span>Bookshelf-Vue</span></h1>
       <p>
         Bookshelf-Vue adalah media pustaka digital modern berbasis 
@@ -8,7 +8,7 @@
       </p>
     </div>
 
-    <div class="features">
+    <div class="features user-select-none">
       <router-link to="/katalog" class="feature-card">
         <i class="bi bi-journal-bookmark"></i>
         <h3>Katalog Buku</h3>

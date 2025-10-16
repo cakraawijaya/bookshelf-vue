@@ -1,7 +1,7 @@
 <template>
   <div class="container manajemen-container">
-    <h1 class="manajemen-title mb-3">Manajemen Buku</h1>
-    <p class="manajemen-desc text-muted mb-2">
+    <h1 class="manajemen-title mb-3 user-select-none">Manajemen Buku</h1>
+    <p class="manajemen-desc text-muted mb-2 user-select-none">
       Menu ini menampilkan daftar koleksi buku perpustakaan yang tersedia saat ini, serta memungkinkan 
       Anda menambah, mengubah, atau menghapus data buku secara mudah dan cepat.
     </p>
@@ -10,7 +10,7 @@
 
     <div class="row align-items-stretch justify-content-between mb-3 flex-column flex-md-row">
       <div class="col-md-4 text-start mb-2 mb-md-0 d-flex">
-        <button class="btn btn-warning w-70 w-md-auto flex-fill-md" @click="formMode = 'create'">
+        <button class="btn btn-warning w-70 w-md-auto flex-fill-md user-select-none" @click="formMode = 'create'">
           <i class="bi bi-journal-plus me-1"></i> Tambah Buku
         </button>
       </div>
@@ -23,7 +23,7 @@
             v-model="searchQuery"
             placeholder="Cari judul / pengarang / tahun..."
           />
-          <span class="search-label">
+          <span class="search-label user-select-none">
             <i class="bi bi-search"></i>
           </span>
         </div>
@@ -35,7 +35,7 @@
         <div class="row">
           <div class="col-12 col-md-3 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-create">
+              <span class="input-group-text bginput-create user-select-none">
                 <i class="bi bi-journal-richtext me-1"></i>Judul
               </span>
               <input
@@ -48,7 +48,7 @@
           </div>
           <div class="col-12 col-md-4 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-create">
+              <span class="input-group-text bginput-create user-select-none">
                 <i class="bi bi-people-fill me-1"></i>Pengarang
               </span>
               <input
@@ -61,7 +61,7 @@
           </div>
           <div class="col-12 col-md-3 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-create">
+              <span class="input-group-text bginput-create user-select-none">
                 <i class="bi bi-calendar-range-fill me-1"></i>Tahun
               </span>
               <input
@@ -73,7 +73,7 @@
             </div>
           </div>
           <div class="col-12 col-md-2 d-grid">
-            <button type="submit" class="btn btn-sm btn-warning col-12">
+            <button type="submit" class="btn btn-sm btn-warning col-12 user-select-none">
               <i class="bi bi-check2-square me-1"></i>Tambah
             </button>
           </div>
@@ -86,7 +86,7 @@
         <div class="row">
           <div class="col-12 col-md-3 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-update">
+              <span class="input-group-text bginput-update user-select-none">
                 <i class="bi bi-journal-richtext me-1"></i>Judul
               </span>
               <input
@@ -99,7 +99,7 @@
           </div>
           <div class="col-12 col-md-4 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-update">
+              <span class="input-group-text bginput-update user-select-none">
                 <i class="bi bi-people-fill me-1"></i>Pengarang
               </span>
               <input
@@ -112,7 +112,7 @@
           </div>
           <div class="col-12 col-md-3 mb-2 mb-md-0">
             <div class="input-group input-group-sm">
-              <span class="input-group-text bginput-update">
+              <span class="input-group-text bginput-update user-select-none">
                 <i class="bi bi-calendar-range-fill me-1"></i>Tahun
               </span>
               <input
@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="col-12 col-md-2 d-grid">
-            <button type="submit" class="btn btn-sm btn-info col-12">
+            <button type="submit" class="btn btn-sm btn-info col-12 user-select-none">
               <i class="bi bi-check2-square me-1"></i>Edit
             </button>
           </div>
@@ -134,7 +134,7 @@
 
     <div class="table-responsive mt-4">
       <table class="table table-bordered table-striped table-hover shadow-sm">
-        <thead class="table-dark">
+        <thead class="table-dark user-select-none">
           <tr>
             <th class="align-middle text-center">
               <i class="bi bi-journal-text me-1"></i> Judul Buku
@@ -157,7 +157,7 @@
             <td class="align-middle text-center">{{ book.tahun }}</td>
             <td
               v-if="filteredBooks.length > 0"
-              class="d-flex flex-column flex-md-row justify-content-center gap-1 gap-md-2 align-middle text-center"
+              class="d-flex flex-column flex-md-row justify-content-center gap-1 gap-md-2 align-middle text-center user-select-none"
             >
               <button @click="showEdit(book)" class="btn btn-sm btn-info">
                 <i class="bi bi-pencil"></i> Edit

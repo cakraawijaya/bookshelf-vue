@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid d-flex align-items-center">
       
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center user-select-none" href="#">
         <img
           src="favicon/favicon-32x32.png"
           alt="Logo"
@@ -12,7 +12,7 @@
       </a>
 
       <button
-        class="navbar-toggler custom-toggler"
+        class="navbar-toggler custom-toggler user-select-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse user-select-none" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/" class="nav-link" aria-current="page">

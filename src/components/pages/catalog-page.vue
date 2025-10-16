@@ -1,7 +1,7 @@
 <template>
   <div class="container katalog-container">
-    <h1 class="katalog-title mb-3">Katalog</h1>
-    <p class="katalog-desc text-muted mb-2">
+    <h1 class="katalog-title mb-3 user-select-none">Katalog</h1>
+    <p class="katalog-desc text-muted mb-2 user-select-none">
       Menu ini menampilkan daftar koleksi buku perpustakaan yang tersedia saat ini.
     </p>
 
@@ -15,7 +15,7 @@
           v-model="searchQuery"
           placeholder="Cari judul / pengarang / tahun..."
         />
-        <span class="search-label d-flex align-items-center justify-content-center">
+        <span class="search-label d-flex align-items-center justify-content-center user-select-none">
           <i class="bi bi-search"></i>
         </span>
       </div>
@@ -23,7 +23,7 @@
 
     <div class="table-responsive">
       <table class="table table-bordered table-striped table-hover shadow-sm">
-        <thead class="table-dark">
+        <thead class="table-dark user-select-none">
           <tr>
             <th class="align-middle text-center">
               <i class="bi bi-journal-text"></i> Judul Buku
