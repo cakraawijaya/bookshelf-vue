@@ -77,7 +77,7 @@
    <br>
 4. Unduh dan ekstrak repositori ini.<br><br>
 5. Salin direktori: ``` public ``` dan ``` src ```.<br><br>
-6. Salin berkas: ``` BACA.md ```, ``` README.md ```, dan ``` License.txt ```.<br><br>
+6. Salin berkas: ``` BACA.md ```, ``` README.md ```, dan ``` LICENSE.txt ```.<br><br>
 7. Tempel dan Timpa ke dalam direktori ``` bookshelf-vue ```.<br><br>
 8. Buka ``` Terminal ``` di dalam direktori tersebut.<br><br>
 9. Instal ``` bootstrap ``` untuk mengatur tampilan (layout):<br>
