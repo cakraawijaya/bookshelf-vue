@@ -76,8 +76,8 @@
    </table>
    <br>
 4. Download and extract this repository.<br><br>
-5. Copy the directories: ``` public ``` dan ``` src ```.<br><br>
-6. Copy the files: ``` BACA.md ```, ``` README.md ```, dan ``` License.txt ```.<br><br>
+5. Copy the directories: ``` public ``` and ``` src ```.<br><br>
+6. Copy the files: ``` BACA.md ```, ``` README.md ```, and ``` LICENSE.txt ```.<br><br>
 7. Paste and Replace into the ``` bookshelf-vue ``` directory.<br><br>
 8. Open ``` Terminal ``` inside that directory.<br><br>
 9. Install ``` bootstrap ``` to manage the appearance (layout):<br>
