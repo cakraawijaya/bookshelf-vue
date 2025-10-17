@@ -12,7 +12,7 @@
 ## Kebutuhan Proyek
 | Bagian | Deskripsi |
 | --- | --- |
-| Fitur | • Buat<br>• Baca<br>• Ubah<br>• Hapus |
+| Fitur | • Buat<br>• Baca<br>• Ubah<br>• Hapus<br>• Cari |
 | Kerangka kerja | • Bootstrap 5<br>• Vue.js 3 |
 | Peralatan | • Visual Studio Code<br>• Node.js |
 | VS Code Extensions | • Prettier<br>• Vetur |
