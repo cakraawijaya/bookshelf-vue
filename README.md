@@ -12,7 +12,7 @@
 ## Project Requirements
 | Part | Description |
 | --- | --- |
-| Features | • Create<br>• Read<br>• Update<br>• Delete |
+| Features | • Create<br>• Read<br>• Update<br>• Delete<br>• Search |
 | Framework | • Bootstrap 5<br>• Vue.js 3 |
 | Tools | • Visual Studio Code<br>• Node.js |
 | VS Code Extensions | • Prettier<br>• Vetur |
