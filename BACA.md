@@ -128,7 +128,8 @@
 4. Masuk ke dashboard Vercel:&nbsp;&nbsp;<strong><a href="https://vercel.com/dashboard">Klik Disini</a></strong><br><br>
 5. Klik ``` Add New Project ```.<br><br>
 6. Pilih repositori GitHub mana yang diinginkan.<br><br>
-7. Klik ``` Deploy ```.
+7. Klik ``` Deploy ```.<br><br>
+8. Untuk mendapatkan domain yang bersih:&nbsp;&nbsp;Klik menu ``` Settings ``` -> Pilih ``` Domains ``` -> Klik tombol ``` Edit ``` -> Klik tombol ``` Save ``` (*Opsional).
 
 <br><br>
 
