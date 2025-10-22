@@ -128,7 +128,8 @@
 4. Log in to the Vercel dashboard:&nbsp;&nbsp;<strong><a href="https://vercel.com/dashboard">Click Here</a></strong><br><br>
 5. Click ``` Add New Project ```.<br><br>
 6. Select the desired GitHub repository.<br><br>
-7. Click ``` Deploy ```.
+7. Click ``` Deploy ```.<br><br>
+8. To get a clean domain:&nbsp;&nbsp;Click the ``` Settings ``` menu -> Select ``` Domains ``` -> Click the ``` Edit ``` button -> Click the ``` Save ``` button (*Optional).
 
 <br><br>
 
